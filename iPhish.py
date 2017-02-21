@@ -63,7 +63,8 @@ targetFile.write("</html>")
 
 targetFile.close()
 
+#remove the current index.html file (MUST BE PRESENT IN HTML DIR)
 os.remove("/var/www/html/index.html")
 
-
+#sends generated iFrame to /var/www/html/ folder 
 os.rename("index.html", "/var/www/html/index.html")
