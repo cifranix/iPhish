@@ -8,7 +8,7 @@ iPhish is a simple php-infused python script, used to emulate a desired website 
 * PHP 5.6.27
 
 # Usage
-Copy contents of html file to var/www/html:
+Copy contents of html directory to var/www/html:
 ```sh
 $ cp html/* /var/www/html/
 ```
