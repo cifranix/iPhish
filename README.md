@@ -22,5 +22,8 @@ $ python3 iPhish https://www.example.com
 [![iPhish YouTube Demo](https://img.youtube.com/vi/jMzkWeUoyiM/0.jpg)](https://www.youtube.com/watch?v=jMzkWeUoyiM&feature=youtu.be)
 
 # Future Developments 
+* Input validation 
+* Usage within the .py
+* Determine if target website will not open iFrame
 
 https://xkcd.com/1694/
