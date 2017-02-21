@@ -12,9 +12,9 @@ $ python3 iPhish https://www.example.com
 ```
 
 # Dependencies
-* Fedora release 24
-* Running apache webserver
-* Python 3.5.2
+* Any modern *nix distro (tested on Fedora 24)
+* Apache >= 2.4
+* Python >= 3.5
 * PHP 5.6.27
 
 
